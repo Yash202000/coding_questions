@@ -37,4 +37,18 @@ class Solution:
 
 
 
+"""
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         
+        def find_median(l,countl):
+            if countl%2==0:
+                return (l[countl//2]+l[(countl//2) - 1])/2
+            else:
+                return l[countl//2]
+        nums1.extend(nums2)
+        nums1.sort()
+        return find_median(nums1,len(nums1))
+
+
+"""        
