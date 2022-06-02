@@ -1,3 +1,20 @@
+def findsol(posb,n,curr):
+
+    if sum(curr)== n:
+     
+        posb.append(curr.copy())
+
+    elif sum(curr)>n:
+        return
+    
+    curr.append(1)
+    findsol(posb,n,curr)
+    curr.remove(1)
+    curr.append(2)
+    findsol(posb,n,curr)
+    curr.remove(2)
+
+
 class Solution:
     def climbStairs(self, n: int) -> int:
         
